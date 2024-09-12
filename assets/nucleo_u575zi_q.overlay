@@ -1,0 +1,13 @@
+&usart2 {
+    status = "okay";
+    current-speed = <115200>;
+
+    pinctrl-0 = <&usart2_tx_pd5 &usart2_rx_pd6>;
+    pinctrl-names = "default";
+
+    esp8266 {
+        compatible = "espressif,esp-at";
+        status = "okay";
+    };
+};
+// vim:ft=css
